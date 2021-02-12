@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BookWagon.Inc</title>
+
+
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="logo">
+                <h4>BookWagon.Inc</h4>
+            </div>
+            <div class="links">
+                <a href="index.html" class="mainlink">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="landing">
+
+            <div class="landingImage3" data-aos="fade-down" data-aos-duration="2000">
+                <img src="img/phone.png" alt="A person with iPad">
+            </div>
+
+            <div class="landingText" data-aos="fade-up" data-aos-duration="1000">
+                <h1>Contact Us<span style="color:#e0501b;font-size: 4vw"> </span> </h1>
+                <h3>Call us anytime to understand the concept</h3>
+                <div class="btn">
+                    <a href="mailto:terminalmicrocode@gmaiil.com">Mail Us</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="infoHeader" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Contact<span style="color:#e0501b">form.</span> </h1>
+            <br>
+            <br>
+            <br>
+            <h1 style="text-align: center;">REGISTRATION FORM</h1>
+            <form name="RegForm" action="#" onsubmit="return regFormFunction()" method="post">
+                <p>Name: <input type="text" size="65" name="Name" /></p>
+                <br />
+                <p>Address: <input type="text" size="65" name="Address" />
+                </p>
+                <br />
+                <p>E-mail Address: <input type="text" size="65" name="EMail" /></p>
+                <br />
+                <p>Password: <input type="text" size="65" name="Password" /></p>
+                <br />
+                <p>Telephone: <input type="text" size="65" name="Telephone" /></p>
+                <br />
+
+                <p>
+                    SELECT YOUR MEMBERSHIP TYPE
+                    <select type="text" value="" name="Subject"> 
+					<option>SILVER</option> 
+					<option>GOLD</option> 
+					<option>PLATINUM</option> 
+				</select>
+                </p>
+                <br />
+                <br />
+                <p>Comments: <textarea cols="55" name="Comment"> </textarea></p>
+                <p>
+                    <input type="submit" value="Submit" name="Submit" />
+                    <input type="reset" value="Reset" name="Reset" />
+                </p>
+            </form>
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <div class="footer ">
+        <h2>BookWagon</h2>
+        <div class="footerlinks ">
+            <a href="# " class="mainlink ">Home</a>
+            <a href="# ">About</a>
+            <a href="# ">Contact</a>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+        function regFormFunction() {
+            var name =
+                document.forms["RegForm"]["Name"];
+            var email =
+                document.forms["RegForm"]["EMail"];
+            var phone =
+                document.forms["RegForm"]["Telephone"];
+            var what =
+                document.forms["RegForm"]["Subject"];
+            var password =
+                document.forms["RegForm"]["Password"];
+            var address =
+                document.forms["RegForm"]["Address"];
+
+            if (name.value == "") {
+                window.alert("Please enter your name.");
+                name.focus();
+                return false;
+            }
+
+            if (address.value == "") {
+                window.alert("Please enter your address.");
+                address.focus();
+                return false;
+            }
+
+            if (email.value == "") {
+                window.alert(
+                    "Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+
+            if (phone.value == "") {
+                window.alert(
+                    "Please enter your telephone number.");
+                phone.focus();
+                return false;
+            }
+
+            if (password.value == "") {
+                window.alert("Please enter your password");
+                password.focus();
+                return false;
+            }
+
+            if (what.selectedIndex < 1) {
+                alert("Please enter your membership type.");
+                what.focus();
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
