@@ -95,4 +95,52 @@ body {
     .profile p {
         margin: 20px 10px 80px 10px;
     }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .bod {
+        background: rgba(0, 0, 0, 0.7) url("https://source.unsplash.com/1600x900/?books,contact");
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    .bod h1 {
+        color: aliceblue;
+    }
+    .bod form {
+        color: aliceblue;
+        align-items: center;
+        padding-left: 20px;
+    }
+    .fields {
+        margin: 12px 0;
+        width: 38%;
+        padding: 6px;
+        border: 93px black;
+        border-radius: 18px;
+    }
+    .t-area {
+        border: 2px;
+        border-radius: 15px;
+        width: 39%;
+    }
+    .form-style li {
+        list-style-type: none;
+    }
+    .div {
+        box-align: center;
+    }
+    .form-style {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .btn {
+        padding: 8px 20px;
+        margin: 7px 0;
+        border: 2px solid white;
+        border-radius: 8px;
+        font-size: 18px;
+        background: none;
+        color: white;
+    }
 }
